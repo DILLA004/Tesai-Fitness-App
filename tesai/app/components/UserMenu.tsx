@@ -13,7 +13,7 @@ const UserMenu = () =>{
                 </div>
 
 
-            <div onClick={()=>{}} className="p-4 md:py-1 md:px-2 border-[1px] flex flex-row items-center gap-3 rounded-full cursor-pointer transition">
+            <div onClick={()=>{}} className="p-4 md:py-1 hidden md:px-2 border-[1px] flex flex-row items-center gap-3 rounded-full cursor-pointer transition">
                 <div className="hidden md:block">
                     <Avatar/>
                 </div>

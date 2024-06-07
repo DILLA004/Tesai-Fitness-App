@@ -5,7 +5,7 @@ import UserMenu from "@/app/components/UserMenu";
 
 const Navbar = ()=>{
     return (
-        <div className="fixed w-full z-10s">
+        <div className="fixed w-full z-10">
             <div className="py-4">
                 <Container>
                     <div className="
@@ -15,7 +15,7 @@ const Navbar = ()=>{
                     justify-between
                     gap-2
                     md:gap-0">
-                        <div className="pl-8"><Logo/></div>
+                        <div className="pl-16"><Logo/></div>
                         <Links/>
                         <UserMenu/>
                     </div>
