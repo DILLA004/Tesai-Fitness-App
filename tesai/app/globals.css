@@ -238,12 +238,12 @@ body {
     margin-bottom: -30vh;
 }
 
-.text-block__p1{
+ .text-block__p1{
     font-size: calc(var(--index) * 1);
     font-family: Futura, sans-serif;
     color: #777B7E;
 }
-.text-block__h4{
+.section-b .text-block__h4{
     font-size: calc(var(--index) * 2);
     font-family: Futura, sans-serif;
     line-height: .9;
@@ -251,7 +251,7 @@ body {
     margin-top: 20vh;
 }
 
-.consult-button {
+.section-b .consult-button {
 
     margin: 15vh 7.5vw;
     display: flex;
@@ -266,17 +266,34 @@ body {
     border-radius: 50px;
     font-size: calc(var(--index) * 0.76);
 }
-.consult-button:hover{
+.section-b .consult-button:hover{
     cursor: pointer;
     background-color: transparent;
     border: 3px solid #FF4400;
     color: white;
     padding: 2.1vh 4vw;
 }
-.consult-button:hover img{
+.section-b .consult-button:hover img{
     display: none;
 }
-.consult-button img{
+.section-b .consult-button img{
     padding-left: calc(var(--index) * 0.7);
     height: calc(var(--index)*1.3);
+}
+.section-b{
+    display: flex;
+    padding: calc(var(--index) * 14) 0;
+    margin-bottom: -60vh;
+}
+.footer{
+    margin-top: auto;
+    z-index: 10;
+    background-color: #FF4400;
+    padding: 5vh 10vw;
+}
+.section-b > *{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

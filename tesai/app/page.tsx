@@ -73,7 +73,7 @@ export default function Home() {
                       <h1 className="text-block__h1">THOSE WHO WILL MAKE </h1>
                       <h1 className="text-block__h1">YOU STRONGER</h1>
                   </div>
-                  <div className="section">
+                  <div className="section-b">
                       <div className="section__left">
                           <img className="section__item" src="/images/image%20128.png" alt="woman-workout"/>
                       </div>

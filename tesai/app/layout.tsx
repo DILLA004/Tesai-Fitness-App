@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,12 +10,6 @@ export const metadata: Metadata = {
     title: "Tesai - Fitness App",
     description: "Find your greatness",
 };
-
-// const font = Inter({
-//     subsets: ["latin"],
-//     weight: ["700"]
-// });
-
 export default function RootLayout({
                                        children,
                                    }: Readonly<{
@@ -25,7 +20,7 @@ export default function RootLayout({
         <body className={inter.className}>
         <Navbar/>
         {children}
-
+        <Footer/>
         </body>
         </html>
     );
