@@ -86,6 +86,7 @@ const Modal: React.FC<ModalProps> = ({
                     lg:w-3/6
                     xl:w-2/5
                     my-6
+                    mt-44
                     mx-auto
                     h-full
                     lg:h-auto
@@ -159,6 +160,7 @@ const Modal: React.FC<ModalProps> = ({
                                         onClick={handleSubmit}
                                     />
                                 </div>
+                                {footer}
                             </div>
                         </div>
                     </div>
