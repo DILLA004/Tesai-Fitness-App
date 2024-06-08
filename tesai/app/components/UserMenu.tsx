@@ -2,12 +2,14 @@
 
 
 import Avatar from "@/app/components/Avatar";
+import useRegisterModal from "@/app/hooks/useRegisterModal";
 
 const UserMenu = () =>{
+    const registerModal = useRegisterModal();
     return (
         <div className="relative pr-24">
             <div className="flex flex-row items-center gap-3">
-                <div onClick={() => {}}
+                <div onClick={registerModal.onOpen}
                      className="hidden md:block text-sm text-white font-semibold py-1.5 px-7 rounded-full transition cursor-pointer border-2 border-[#FF4400] hover:bg-gradient-to-r from-[#FF4400] to-[#FF0000]" >
                     JOIN US
                 </div>

@@ -11,6 +11,7 @@ const Links = () =>{
         transition
         cursor-pointer">
             <div className="
+            links
             flex
             flex-row
             items-center
