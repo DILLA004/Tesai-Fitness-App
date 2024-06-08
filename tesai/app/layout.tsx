@@ -6,27 +6,27 @@ import Navbar from "@/app/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tesai - Fitness App",
-  description: "Find your greatness",
+    title: "Tesai - Fitness App",
+    description: "Find your greatness",
 };
 
-const font = Inter({
-  subsets: ["latin"],
-  weight: ["700"]
-});
+// const font = Inter({
+//     subsets: ["latin"],
+//     weight: ["700"]
+// });
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-      <Navbar/>
-      {children}
+    return (
+        <html lang="en">
+        <body className={inter.className}>
+        <Navbar/>
+        {children}
 
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }
