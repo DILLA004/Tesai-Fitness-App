@@ -283,7 +283,7 @@ body {
 .section-b{
     display: flex;
     padding: calc(var(--index) * 14) 0;
-    margin-bottom: -60vh;
+    padding-bottom: 0;
 }
 .footer{
     margin-top: auto;
