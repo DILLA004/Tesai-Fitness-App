@@ -35,7 +35,15 @@ export default function Home() {
                               <p className="text-block__p">[OUR MISSION]</p>
                           </div>
                           <img className="section__item" src="/images/image%20125.png" alt="woman-workout"/>
-                          <img className="section__item" src="/images/image%20127.png" alt="woman-workout"/>
+                          <div className="text-block1 section__item">
+                              <h1 className="text-block__h">START YOUR JOURNEY</h1>
+                              <h1 className="text-block__h1">TO HEALTH AND STRENGTH</h1>
+                              <img src="/images/image%20127.png" alt="woman-workout"/>
+                              <div className="join-button" onClick={()=>{}}>
+                                  <p>VIEW ALL PLANS</p>
+                                  <img src="/images/Frame.png" alt="Icon"/>
+                              </div>
+                          </div>
                       </div>
                       <div className="section__right">
                           <div className="text-block section__item">
@@ -47,10 +55,39 @@ export default function Home() {
                                   <img src="/images/Frame.png" alt="Icon"/>
                               </div>
                           </div>
-                          <img className="section__item" src="/images/image%20126.png" alt="woman-workout"/>
-                          <img className="section__item" src="/images/image%20128.png" alt="woman-workout"/>
+                          <div className = "categories section__item">
+                              <ul>
+                                  <li>BODY</li>
+                                  <li>FITNESS</li>
+                                  <li>CARDIO</li>
+                                  <li>CROSSFIT</li>
+                                  <li>PILATES</li>
+                                  <li>YOGA</li>
+                                  <li>ENDURANCE</li>
+                              </ul>
+                          </div>
+                          <img className="clean section__item" src="/images/image%20126.png" alt="woman-workout"/>
                       </div>
                   </main>
+                  <div className="bottom-header">
+                      <h1 className="text-block__h1">THOSE WHO WILL MAKE </h1>
+                      <h1 className="text-block__h1">YOU STRONGER</h1>
+                  </div>
+                  <div className="section">
+                      <div className="section__left">
+                          <img className="section__item" src="/images/image%20128.png" alt="woman-workout"/>
+                      </div>
+                      <div className="section__right">
+                          <div className="text-block section__item">
+                              <p className="text-block__p1">Maya Lacy</p>
+                              <h4 className="text-block__h4">‘There is no such thing as impossible - there is only the undone!’</h4>
+                              <div className="consult-button" onClick={()=>{}}>
+                                  <p>FREE CONSULTATION</p>
+                                  <img src="/images/Frame.png" alt="Icon"/>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
           </div>
 
