@@ -49,7 +49,7 @@ const LoginModal = () => {
                 if (callback?.ok) {
                     toast.success('Logged in');
                     router.refresh();
-                    loginModal.onClose;
+                    loginModal.onClose();
                 }
 
                 if(callback?.error) {
@@ -90,13 +90,13 @@ const LoginModal = () => {
                 outline
                 label="Continue with Google"
                 icon={FcGoogle}
-                onClick={() => {}}
+                onClick={() => signIn('google')}
             />
             <Button
                 outline
                 label="Continue with GitHub"
                 icon={AiFillGithub}
-                onClick={() => {}}
+                onClick={() => signIn('github')}
             />
         </div>
     );

@@ -2,10 +2,10 @@ import Container from "@/app/components/Container";
 import Logo from "@/app/components/Logo";
 import Links from "@/app/components/Links";
 import UserMenu from "@/app/components/UserMenu";
-import {User} from "@prisma/client";
+import {SafeUser} from "@/app/types";
 
 interface NavbarProps {
-    currentUser?: User | null;
+    currentUser?: SafeUser | null;
 }
 
 

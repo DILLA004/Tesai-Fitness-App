@@ -4,10 +4,13 @@ import Image from "next/image";
 import './globals.css';
 import React from "react";
 import { useEffect } from "react";
+import registerModal from "@/app/components/modals/RegisterModal";
+import useRegisterModal from "@/app/hooks/useRegisterModal";
 
 
 export default function Home() {
 
+    const registerModal = useRegisterModal();
   return (
       <div>
           <div className="hero-section">
@@ -50,7 +53,7 @@ export default function Home() {
                               <h1 className="text-block__h">A HABIT BUILDING SEQUENCE</h1>
                               <h1 className="text-block__h1">TO UPGRADE DAILY RITUALS</h1>
                               <p className="text-block__p">Our app combines statistics, multifunctional exercises and scientific approaches. We are passionate about progressive training programmes and create challenges with our professional coaches to make working out fun and rewarding for you.</p>
-                              <div className="join-button" onClick={()=>{}}>
+                              <div className="join-button" onClick={registerModal.onOpen}>
                                   <p>JOIN US</p>
                                   <img src="/images/Frame.png" alt="Icon"/>
                               </div>
