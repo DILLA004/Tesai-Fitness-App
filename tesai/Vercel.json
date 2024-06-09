@@ -1,0 +1,13 @@
+{
+  "build": {
+    "env": {
+      "DATABASE_URL": "mongodb+srv://danylocherniavskyi:dontforget13T@cluster0.xe2zzs5.mongodb.net/tesai"
+    },
+    "functions": {
+      "api/**/*.ts": {
+        "runtime": "nodejs14.x"
+      }
+    },
+    "postbuild": "prisma generate"
+  }
+}

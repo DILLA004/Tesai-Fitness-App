@@ -2,8 +2,16 @@ import Container from "@/app/components/Container";
 import Logo from "@/app/components/Logo";
 import Links from "@/app/components/Links";
 import UserMenu from "@/app/components/UserMenu";
+import {User} from "@prisma/client";
 
-const Navbar = ()=>{
+interface NavbarProps {
+    currentUser?: User | null;
+}
+
+
+const Navbar:React.FC<NavbarProps> = ({
+    currentUser
+                                      })=>{
     return (
         <div className="fixed w-full z-10">
             <div className="py-4">
@@ -17,7 +25,7 @@ const Navbar = ()=>{
                     md:gap-0">
                         <div className="pl-16"><Logo/></div>
                         <Links/>
-                        <UserMenu/>
+                        <UserMenu currentUser={currentUser}/>
                     </div>
 
                 </Container>

@@ -7,6 +7,7 @@ import Modal from "@/app/components/modals/Modal";
 import RegisterModal from "@/app/components/modals/RegisterModal";
 import ToasterProvider from "@/app/providers/ToasterProvider";
 import LoginModal from "@/app/components/modals/LoginModal";
+import getCurrentUser from "@/app/actions/getCurrentUser";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,17 +15,18 @@ export const metadata: Metadata = {
     title: "Tesai - Fitness App",
     description: "Find your greatness",
 };
-export default function RootLayout({children,
+export default async function RootLayout({children,
                                    }: {
     children: React.ReactNode;
 }) {
+    const currentUser = await getCurrentUser();
     return (
         <html lang="en">
             <body className={inter.className}>
                 <ToasterProvider/>
                 <LoginModal/>
                 <RegisterModal/>
-                <Navbar/>
+                <Navbar currentUser={currentUser}/>
                 {children}
                 <Footer/>
             </body>
