@@ -4,16 +4,17 @@
 import Avatar from "@/app/components/Avatar";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import {useCallback, useState} from "react";
-import MenuItem from "@/app/components/MenuItem";
+import MenuItem from "@/app/components/userMenu/MenuItem";
 import {signOut} from "next-auth/react";
 import {SafeUser} from "@/app/types";
+import MenuRoutes from "@/app/components/userMenu/MenuRoutes";
 
 interface UserMenuProps{
     currentUser?: SafeUser | null;
 }
 
 const UserMenu: React.FC<UserMenuProps> = ({
-    currentUser
+                                               currentUser
                                            }) =>{
     const [isOpen, setIsOpen] = useState(false);
 
@@ -51,26 +52,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 )}
             </div>
             {isOpen && (
-                <div className="
-                absolute
-                rounded-xl
-                shadow-md
-                w-[30vw]
-                md:w-3/4
-                bg-transparent
-                overflow-hidden
-                right-6
-                top-12
-
-                text-sm">
-                    <>
-                        <MenuItem onClick={() => {}} label="Profile"/>
-                        <MenuItem onClick={() => {}} label="Training"/>
-                        <MenuItem onClick={() => {}} label="Favourite"/>
-                        <hr className="bg-neutral-700"/>
-                        <MenuItem onClick={() => signOut()} label="Logout"/>
-                    </>
-                </div>
+                <MenuRoutes/>
             )}
         </div>
     );

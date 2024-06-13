@@ -1,10 +1,8 @@
 'use client';
 
 import Image from "next/image";
-import './globals.css';
+import '../../globals.css';
 import React from "react";
-import { useEffect } from "react";
-import registerModal from "@/app/components/modals/RegisterModal";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 
 

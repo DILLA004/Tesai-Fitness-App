@@ -1,8 +1,8 @@
 import Container from "@/app/components/Container";
 import Logo from "@/app/components/Logo";
-import Links from "@/app/components/Links";
-import UserMenu from "@/app/components/UserMenu";
+import UserMenu from "@/app/components/userMenu/UserMenu";
 import {SafeUser} from "@/app/types";
+import NavbarRoutes from "@/app/components/navbar/NavbarRoutes";
 
 interface NavbarProps {
     currentUser?: SafeUser | null;
@@ -23,8 +23,10 @@ const Navbar:React.FC<NavbarProps> = ({
                     justify-between
                     gap-2
                     md:gap-0">
-                        <div className="pl-16"><Logo/></div>
-                        <Links/>
+                        <div className="pl-16">
+                            <Logo/>
+                        </div>
+                        <NavbarRoutes/>
                         <UserMenu currentUser={currentUser}/>
                     </div>
 
