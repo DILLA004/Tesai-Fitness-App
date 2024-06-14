@@ -9,12 +9,7 @@ import {SafeUser} from "@/app/types";
 import registerModal from "@/app/components/modals/RegisterModal";
 import {useCurrentUser} from "@/app/components/CurrentUserProvider";
 
-interface HomeProps {
-  currentUser?: SafeUser | null;
-}
-
-
-const Home:React.FC<HomeProps> = () =>{
+const Home = () =>{
     const registerModal = useRegisterModal();
     const { currentUser } = useCurrentUser();
     console.log('currentUser in ChildComponent:', currentUser);

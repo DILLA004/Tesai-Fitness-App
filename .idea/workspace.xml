@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="6+ hours to fucking make heart button">
+      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/prisma/schema.prisma" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DILLA004&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="405588ea-03fb-4e60-882a-cdb4f67237d1" />
+        <option name="url" value="https://github.com/DILLA004/Tesai-Fitness-App.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2hWGXdcvBD8oxjKanvn1luDKG4t" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/danyl/WebstormProjects/Tesai-Fitness-App/tesai/app/components/modals&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\danyl\\WebstormProjects\\Tesai-Fitness-App\\tesai\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components\modals" />
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\hooks" />
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components\userMenu" />
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components" />
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components\navbar" />
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\(dashboard)\(routes)" />
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\exercises\[exersises]" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="" />
+      <created>1717702460470</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717702460470</updated>
+      <workItem from="1717702461564" duration="28416000" />
+      <workItem from="1717835030645" duration="13886000" />
+      <workItem from="1717864029212" duration="57899000" />
+      <workItem from="1718216539828" duration="27092000" />
+      <workItem from="1718290391744" duration="17327000" />
+    </task>
+    <task id="LOCAL-00001" summary="Main page pt #1">
+      <option name="closed" value="true" />
+      <created>1717735520710</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717735520710</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Main page pt #233">
+      <option name="closed" value="true" />
+      <created>1717834840880</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717834840880</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;tesai/app/globals.css&#10;#&#9;tesai/app/page.tsx">
+      <option name="closed" value="true" />
+      <created>1717835063177</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717835063177</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Full home page">
+      <option name="closed" value="true" />
+      <created>1717839663219</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717839663219</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;tesai/app/globals.css">
+      <option name="closed" value="true" />
+      <created>1717839706308</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717839706308</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;tesai/app/globals.css">
+      <option name="closed" value="true" />
+      <created>1717843236573</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717843236573</updated>
+    </task>
+    <task id="LOCAL-00007" summary="youu">
+      <option name="closed" value="true" />
+      <created>1717843441581</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717843441581</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Making a registration modal pt.1.">
+      <option name="closed" value="true" />
+      <created>1717868305125</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717868305125</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Making a registration modal pt.2. Inputs">
+      <option name="closed" value="true" />
+      <created>1717874026142</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717874026142</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Making a registration modal. Complete">
+      <option name="closed" value="true" />
+      <created>1717875853540</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717875853540</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Prisma, MongoDB pt.1">
+      <option name="closed" value="true" />
+      <created>1717881638837</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717881638837</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Prisma, MongoDB pt.1">
+      <option name="closed" value="true" />
+      <created>1717881670226</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717881670226</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Prisma, MongoDB pt.2">
+      <option name="closed" value="true" />
+      <created>1717915390288</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717915390288</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Somehow login and registration">
+      <option name="closed" value="true" />
+      <created>1717917127745</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717917127745</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Somehow login and registration">
+      <option name="closed" value="true" />
+      <created>1717917577208</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717917577208</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Somehow login and registration">
+      <option name="closed" value="true" />
+      <created>1717917616107</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717917616107</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Shit happend">
+      <option name="closed" value="true" />
+      <created>1717923572164</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1717923572164</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Complete registration/ authentication">
+      <option name="closed" value="true" />
+      <created>1717959533840</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1717959533840</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Complete registration/ authentication + some exercises">
+      <option name="closed" value="true" />
+      <created>1718280544752</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1718280544752</updated>
+    </task>
+    <task id="LOCAL-00020" summary="6+ hours to fucking make heart button">
+      <option name="closed" value="true" />
+      <created>1718345959609</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1718345959609</updated>
+    </task>
+    <task id="LOCAL-00021" summary="6+ hours to fucking make heart button">
+      <option name="closed" value="true" />
+      <created>1718346166098</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1718346166098</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Main page pt #1" />
+    <MESSAGE value="Main page pt #233" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;tesai/app/globals.css&#10;#&#9;tesai/app/page.tsx" />
+    <MESSAGE value="Full home page" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;tesai/app/globals.css" />
+    <MESSAGE value="youu" />
+    <MESSAGE value="Making a registration modal pt.1." />
+    <MESSAGE value="Making a registration modal pt.2. Inputs" />
+    <MESSAGE value="Making a registration modal. Complete" />
+    <MESSAGE value="Prisma, MongoDB pt.1" />
+    <MESSAGE value="Prisma, MongoDB pt.2" />
+    <MESSAGE value="Somehow login and registration" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="Shit happend" />
+    <MESSAGE value="Complete registration/ authentication" />
+    <MESSAGE value="Complete registration/ authentication + some exercises" />
+    <MESSAGE value="6+ hours to fucking make heart button" />
+    <option name="LAST_COMMIT_MESSAGE" value="6+ hours to fucking make heart button" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
