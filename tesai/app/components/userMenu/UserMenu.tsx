@@ -22,6 +22,8 @@ const UserMenu: React.FC<UserMenuProps> = ({
         setIsOpen((value) => !value);
     }, []);
 
+    console.log(currentUser);
+
     const registerModal = useRegisterModal();
     return (
         <div className="relative pr-24">

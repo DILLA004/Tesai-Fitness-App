@@ -7,31 +7,14 @@ import Container from "@/app/components/Container";
 import getCurrentUser from "@/app/actions/getCurrentUser";
 import ExerciseCard from "@/app/components/ExerciseCard";
 import {SafeUser} from "@/app/types";
+import {useCurrentUser} from "@/app/components/CurrentUserProvider";
 
-
-
-
-export default function ExercisesPage() {
+const ExercisesPage = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [exercises, setExercises] = useState([]);
-    const [currentUser, setCurrentUser] = useState<SafeUser | null>(null); // State to hold current user
 
-    useEffect(() => {
-        const fetchUser = async () => {
-            try {
-                setIsLoading(true);
-                const user = await getCurrentUser();
-                setCurrentUser(user);
-            } catch (error) {
-                console.error("Error fetching user:", error);
-                // Handle error fetching user if needed
-            } finally {
-                setIsLoading(false);
-            }
-        };
-
-        fetchUser();
-    }, []);
+    const { currentUser } = useCurrentUser();
+    console.log('currentUser in ChildComponent:', currentUser);
 
     const {
         register,
@@ -50,6 +33,7 @@ export default function ExercisesPage() {
             <Container>
                 <div className="px-[30vw]">
                     <Search
+                        currentUser={currentUser}
                         setExercises={setExercises}
                         value="sike"
                         id="exercise"
@@ -71,10 +55,9 @@ export default function ExercisesPage() {
                     2xl:grid-cols-6
                     gap-8
                 ">
-
                     {exercises.map((exercise: any) => (
                         <ExerciseCard
-                            // currentUser={currentUser}
+                            currentUser={currentUser}
                             key={exercise.id}
                             data={exercise}/>
                     ))}
@@ -84,3 +67,4 @@ export default function ExercisesPage() {
     );
 }
 
+export default ExercisesPage;

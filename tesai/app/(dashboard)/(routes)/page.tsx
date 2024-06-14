@@ -2,13 +2,22 @@
 
 import Image from "next/image";
 import '../../globals.css';
-import React from "react";
+import React, {useEffect} from "react";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
+import getCurrentUser from "@/app/actions/getCurrentUser";
+import {SafeUser} from "@/app/types";
+import registerModal from "@/app/components/modals/RegisterModal";
+import {useCurrentUser} from "@/app/components/CurrentUserProvider";
+
+interface HomeProps {
+  currentUser?: SafeUser | null;
+}
 
 
-export default function Home() {
-
+const Home:React.FC<HomeProps> = () =>{
     const registerModal = useRegisterModal();
+    const { currentUser } = useCurrentUser();
+    console.log('currentUser in ChildComponent:', currentUser);
   return (
       <div>
           <div className="hero-section">
@@ -94,3 +103,5 @@ export default function Home() {
       </div>
   );
 }
+
+export default Home;

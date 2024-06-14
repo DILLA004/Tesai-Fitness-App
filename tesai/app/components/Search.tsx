@@ -1,10 +1,9 @@
-
-
 'use client';
 
 import {FieldError, FieldErrors, FieldValue, FieldValues, UseFormRegister} from "react-hook-form";
 import { useEffect, useState} from "react";
 import { fetchData, options} from "@/app/api/exercises/fetchData";
+import {SafeUser} from "@/app/types";
 
 interface SearchProps {
     id: string;
@@ -15,6 +14,7 @@ interface SearchProps {
     required: boolean;
     value: string;
     setExercises: any;
+    currentUser?: SafeUser | null;
     register: UseFormRegister<FieldValues>,
     errors: FieldErrors
 }
@@ -29,6 +29,7 @@ const Search: React.FC<SearchProps> = ({
                                          register,
                                          required,
                                          errors,
+                                        currentUser,
                                          setExercises
                                      }) => {
 

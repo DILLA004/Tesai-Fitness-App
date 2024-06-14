@@ -11,15 +11,18 @@ import useRegisterModal from "@/app/hooks/useRegisterModal";
 import Modal from "@/app/components/modals/Modal";
 import Heading from "@/app/components/Heading";
 import Input from "@/app/components/Inputs/Input";
-import toast from "react-hot-toast";
 import Button from "@/app/components/Button";
 import loginModal from "@/app/components/modals/LoginModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
 import {signIn} from "next-auth/react";
+import { toast, ToastOptions } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import {useRouter} from "next/navigation";
 
 const RegisterModal = () => {
     const registerModal = useRegisterModal();
     const loginModal = useLoginModal();
+    const router = useRouter();
     const [isLoading, setIsLoading] = useState(false);
 
     const {
@@ -42,9 +45,44 @@ const RegisterModal = () => {
         axios.post('/api/register', data)
             .then(() => {
                 registerModal.onClose();
-            })
+                toast.success('Wow, You are registered now!!!', {
+                    position: 'top-right',
+                    autoClose: 6000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    // Add custom styling here
+                    style: {
+                        backgroundColor: "#424242",
+                    },
+                });
+            }).then(() =>
+            signIn('credentials', {
+                ...data,
+                redirect: false,
+            }).then(() => {
+                    setIsLoading(false);
+                    router.refresh();
+                    loginModal.onClose();
+                }
+            )
+        )
             .catch((error) => {
-                toast.error('Ooops...Sometimes life just ain`t easy...')
+                toast.error('Sorry, the user is already exists', {
+                    position: 'top-right',
+                    autoClose: 6000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    // Add custom styling here
+                    style: {
+                        backgroundColor: "#424242",
+                    },
+                });
             })
             .finally(() => {
                 setIsLoading(false);

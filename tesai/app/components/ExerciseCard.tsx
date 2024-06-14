@@ -13,7 +13,7 @@ interface ExerciseCardProps {
     disabled?: boolean;
     actionLabel?: string;
     actionId?: string;
-    currentUser?: SafeUser | null;
+    currentUser: SafeUser | null;
 }
 
 const ExerciseCard:React.FC<ExerciseCardProps> = ({
@@ -25,6 +25,7 @@ const ExerciseCard:React.FC<ExerciseCardProps> = ({
     currentUser
 }) => {
     const router = useRouter();
+    console.log(currentUser);
     return (
         <div onClick={() => router.push(`/exercises/${data.id}`)}
              className="
@@ -35,8 +36,16 @@ const ExerciseCard:React.FC<ExerciseCardProps> = ({
                         className="object-cover h-full w-full group-hover:scale-110 transition"/>
                     <div className="absolute top-3 right-3">
                         <HeartButton
-                            exerciseId={data.id}/>
+                            exerciseId={data.id}
+                            currentUser={currentUser}/>
                     </div>
+                </div>
+                <div className="font-semibold text-lg">
+                    {data?.name.toUpperCase()}
+                </div>
+                <div className="font-medium text-neutral-500 pt-4">
+                    <p className="text-neutral-300">{data?.target.toUpperCase()}</p>
+                    <p className="text-sm">{data?.secondaryMuscles.map((muscle: any) => muscle.toUpperCase() + `, `)}</p>
                 </div>
 
             </div>

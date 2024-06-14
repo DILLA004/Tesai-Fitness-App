@@ -12,10 +12,12 @@ import useRegisterModal from "@/app/hooks/useRegisterModal";
 import Modal from "@/app/components/modals/Modal";
 import Heading from "@/app/components/Heading";
 import Input from "@/app/components/Inputs/Input";
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
 import Button from "@/app/components/Button";
 import useLoginModal from "@/app/hooks/useLoginModal";
 import {useRouter} from "next/navigation";
+import { toast, ToastOptions } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LoginModal = () => {
     const router = useRouter();
@@ -47,13 +49,39 @@ const LoginModal = () => {
                 setIsLoading(false);
 
                 if (callback?.ok) {
-                    toast.success('Logged in');
+                    toast.success('Wow, You are registered now!!!', {
+                        position: 'top-right',
+                        autoClose: 6000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        // Add custom styling here
+                        style: {
+                            backgroundColor: '#424242',
+                            color: "black"
+                        },
+                    });
                     router.refresh();
                     loginModal.onClose();
                 }
 
                 if(callback?.error) {
-                    toast.error(callback.error);
+                    toast.error('Sorry, something went wrong', {
+                        position: 'top-right',
+                        autoClose: 6000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        // Add custom styling here
+                        style: {
+                            backgroundColor: '#424242',
+                            color: "black"
+                        },
+                    });
                 }
             })
     }
@@ -101,7 +129,7 @@ const LoginModal = () => {
             <div className="text-neutral-500 text-center mt-4 font-light">
                 <div className="justify-center flex flex-row items-center gap-2">
                     <div>
-                        Already have an account?
+                        Don`t have an account yet?
                     </div>
                     <div onClick={() => {registerModal.onOpen(); loginModal.onClose()}}
                          className="text-[#FF4400]

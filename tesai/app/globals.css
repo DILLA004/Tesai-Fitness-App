@@ -307,3 +307,20 @@ body {
 .socials{
     padding-left: 2vw;
 }
+.Toastify__toast-container {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 9999;
+}
+
+/* Optional: Style for each toast */
+.Toastify__toast {
+    width: auto;
+    margin: 0 auto;
+    max-width: 600px; /* Adjust as needed */
+}
