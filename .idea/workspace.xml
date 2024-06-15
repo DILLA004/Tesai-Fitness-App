@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="first sprint, full sign in/up, exercise cards, main page">
+    <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="fuck">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tesai/app/api/register/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/api/register/route.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +95,7 @@
       <workItem from="1718290391744" duration="28339000" />
       <workItem from="1718363548117" duration="4688000" />
       <workItem from="1718368553611" duration="34732000" />
-      <workItem from="1718418169519" duration="44633000" />
+      <workItem from="1718418169519" duration="44805000" />
     </task>
     <task id="LOCAL-00001" summary="Main page pt #1">
       <option name="closed" value="true" />
@@ -304,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718484994187</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fuck">
+      <option name="closed" value="true" />
+      <created>1718485218220</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1718485218220</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +349,7 @@
     <MESSAGE value="Complete registration/ authentication + some exercises" />
     <MESSAGE value="6+ hours to fucking make heart button" />
     <MESSAGE value="first sprint, full sign in/up, exercise cards, main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="first sprint, full sign in/up, exercise cards, main page" />
+    <MESSAGE value="fuck" />
+    <option name="LAST_COMMIT_MESSAGE" value="fuck" />
   </component>
 </project>

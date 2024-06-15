@@ -21,7 +21,7 @@ export async function POST(
         }
     });
     if(existingUser){
-        return {error: "Email already in use!"};
+        return new NextResponse(JSON.stringify({ error: "Email already in use!" }), { status: 400 });
     }
     try {
         const user = await prisma.user.create({
@@ -39,5 +39,5 @@ export async function POST(
         return new NextResponse(JSON.stringify(user), { status: 201 });
     } catch (error) {
         return new NextResponse(JSON.stringify({ error: "User registration failed" }), { status: 500 });
-}
+    }
 }
