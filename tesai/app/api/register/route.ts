@@ -36,8 +36,8 @@ export async function POST(
         // const verificationToken = await generateVerificationToken(email);
         // await sendVerificationEmail(verificationToken.email, verificationToken.token );
 
-        return NextResponse.json(user);
+        return new NextResponse(JSON.stringify(user), { status: 201 });
     } catch (error) {
-    return NextResponse.json({ error: 'User registration failed' }, { status: 500 });
+        return new NextResponse(JSON.stringify({ error: "User registration failed" }), { status: 500 });
 }
 }
