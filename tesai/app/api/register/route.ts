@@ -23,17 +23,21 @@ export async function POST(
     if(existingUser){
         return {error: "Email already in use!"};
     }
+    try {
+        const user = await prisma.user.create({
+            data: {
+                email,
+                name,
+                hashedPassword
+            }
+        });
 
-    const user = await prisma.user.create({
-        data: {
-            email,
-            name,
-            hashedPassword
-        }
-    });
-    //Email confirmation (will be...)
-    // const verificationToken = await generateVerificationToken(email);
-    // await sendVerificationEmail(verificationToken.email, verificationToken.token );
+        //Email confirmation (will be...)
+        // const verificationToken = await generateVerificationToken(email);
+        // await sendVerificationEmail(verificationToken.email, verificationToken.token );
 
-    return NextResponse.json(user);
+        return NextResponse.json(user);
+    } catch (error) {
+    return NextResponse.json({ error: 'User registration failed' }, { status: 500 });
+}
 }

@@ -4,39 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="6+ hours to fucking make heart button">
-      <change afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/[exerciseId]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/ExerciseContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/actions/getExerciseById.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/components/EmptyState.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/components/ExerciseClient.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/components/Pagination.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/libs/mail.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/libs/tokens.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/verification/verification-token.ts" afterDir="false" />
+    <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="first sprint, full sign in/up, exercise cards, main page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/.env" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tesai/app/api/register/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/api/register/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/ExerciseCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/ExerciseCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/Logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/Logo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/Search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/modals/LoginModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/modals/LoginModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/modals/RegisterModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/modals/RegisterModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/userMenu/MenuRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/userMenu/MenuRoutes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/libs/prismadb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/libs/prismadb.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/pages/api/auth/[...nextauth].ts" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/pages/api/auth/[...nextauth].ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/prisma/schema.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +18,7 @@
       <list>
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -102,11 +73,11 @@
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\public\images" />
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app" />
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\gsap" />
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\emailVerification" />
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components\userMenu" />
-      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components" />
-      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components\navbar" />
-      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\(dashboard)\(routes)" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -123,7 +94,8 @@
       <workItem from="1718216539828" duration="27092000" />
       <workItem from="1718290391744" duration="28339000" />
       <workItem from="1718363548117" duration="4688000" />
-      <workItem from="1718368553611" duration="31288000" />
+      <workItem from="1718368553611" duration="34732000" />
+      <workItem from="1718418169519" duration="44367000" />
     </task>
     <task id="LOCAL-00001" summary="Main page pt #1">
       <option name="closed" value="true" />
@@ -301,11 +273,46 @@
       <option name="project" value="LOCAL" />
       <updated>1718346322001</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="6+ hours to fucking make heart button">
+      <option name="closed" value="true" />
+      <created>1718411140855</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1718411140855</updated>
+    </task>
+    <task id="LOCAL-00024" summary="6+ hours to fucking make heart button">
+      <option name="closed" value="true" />
+      <created>1718411197186</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1718411197186</updated>
+    </task>
+    <task id="LOCAL-00025" summary="first sprint, full sign in/up, exercise cards, main page">
+      <option name="closed" value="true" />
+      <created>1718484379123</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1718484379123</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Main page pt #1" />
@@ -325,6 +332,7 @@
     <MESSAGE value="Complete registration/ authentication" />
     <MESSAGE value="Complete registration/ authentication + some exercises" />
     <MESSAGE value="6+ hours to fucking make heart button" />
-    <option name="LAST_COMMIT_MESSAGE" value="6+ hours to fucking make heart button" />
+    <MESSAGE value="first sprint, full sign in/up, exercise cards, main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="first sprint, full sign in/up, exercise cards, main page" />
   </component>
 </project>

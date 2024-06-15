@@ -28,10 +28,11 @@ const NavbarItem: React.FC<NavbarItemProps> = ({
     return (
         <div
             onClick={onClick}
-            className="text-sm
+            className={`text-sm
                 font-semibold
+                ${isActive && 'text-white'}
                 px-2
-                text-white">
+                text-white`}>
 
             {label}
         </div>
