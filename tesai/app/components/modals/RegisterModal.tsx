@@ -1,6 +1,5 @@
 'use client';
 import axios from 'axios';
-import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import { useCallback, useState} from "react";
 import {
@@ -12,7 +11,6 @@ import Modal from "@/app/components/modals/Modal";
 import Heading from "@/app/components/Heading";
 import Input from "@/app/components/Inputs/Input";
 import Button from "@/app/components/Button";
-import loginModal from "@/app/components/modals/LoginModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
 import {signIn} from "next-auth/react";
 import { toast, ToastOptions } from 'react-toastify';

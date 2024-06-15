@@ -11,6 +11,7 @@ import { ToastContainer } from 'react-toastify';
 import React, {Children, ReactNode} from "react";
 import Home from "@/app/(dashboard)/(routes)/page";
 import {CurrentUserProvider} from "@/app/components/CurrentUserProvider";
+import {ExerciseProvider} from "@/app/ExerciseContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,27 +27,29 @@ export default async function RootLayout({children}: {
     console.log(currentUser);
     return (
         <html lang="en">
-        <body className={inter.className}>
-        <ToasterProvider/>
-        <ToastContainer
-            position="top-right"
-            autoClose={5000} // Adjust the duration as needed
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-        />
-        <LoginModal/>
-        <RegisterModal/>
-        <Navbar currentUser={currentUser}/>
-        <CurrentUserProvider currentUser={currentUser}>
-            {children}
-        </CurrentUserProvider>
-        <Footer/>
-        </body>
+            <body className={inter.className}>
+            <ToasterProvider/>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000} // Adjust the duration as needed
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
+            <LoginModal/>
+            <RegisterModal/>
+            <Navbar currentUser={currentUser}/>
+            <CurrentUserProvider currentUser={currentUser}>
+                <ExerciseProvider>
+                    {children}
+                </ExerciseProvider>
+            </CurrentUserProvider>
+            <Footer/>
+            </body>
         </html>
     );
 

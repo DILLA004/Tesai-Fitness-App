@@ -1,12 +1,8 @@
 'use client';
 
-import Image from "next/image";
 import '../../globals.css';
 import React, {useEffect} from "react";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
-import getCurrentUser from "@/app/actions/getCurrentUser";
-import {SafeUser} from "@/app/types";
-import registerModal from "@/app/components/modals/RegisterModal";
 import {useCurrentUser} from "@/app/components/CurrentUserProvider";
 
 const Home = () =>{
@@ -55,10 +51,17 @@ const Home = () =>{
                               <h1 className="text-block__h">A HABIT BUILDING SEQUENCE</h1>
                               <h1 className="text-block__h1">TO UPGRADE DAILY RITUALS</h1>
                               <p className="text-block__p">Our app combines statistics, multifunctional exercises and scientific approaches. We are passionate about progressive training programmes and create challenges with our professional coaches to make working out fun and rewarding for you.</p>
-                              <div className="join-button" onClick={registerModal.onOpen}>
-                                  <p>JOIN US</p>
-                                  <img src="/images/Frame.png" alt="Icon"/>
-                              </div>
+                              {
+                                  currentUser ? (
+                                          <div></div>
+
+                                  ) : (
+                                      <div className="join-button" onClick={registerModal.onOpen}>
+                                          <p>JOIN US</p>
+                                          <img src="/images/Frame.png" alt="Icon"/>
+                                      </div>
+                                  )
+                              }
                           </div>
                           <div className = "categories section__item">
                               <ul>

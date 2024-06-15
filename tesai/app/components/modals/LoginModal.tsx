@@ -49,7 +49,7 @@ const LoginModal = () => {
                 setIsLoading(false);
 
                 if (callback?.ok) {
-                    toast.success('Wow, You are registered now!!!', {
+                    toast.success('Wow, You are logged in now!!!', {
                         position: 'top-right',
                         autoClose: 6000,
                         hideProgressBar: false,

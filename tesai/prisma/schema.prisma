@@ -17,11 +17,21 @@ model User {
   hashedPassword String?
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
+  active         Boolean   @default(false)
   favoriteIds    String[]
 
   accounts  Account[]
   exercises Exercise[]
   plans     Plan[]
+}
+
+model VerificationToken {
+  id      String   @id @default(cuid()) @map("_id")
+  token   String   @unique
+  email   String
+  expires DateTime
+
+  @@unique([email, token])
 }
 
 model Account {

@@ -5,7 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="6+ hours to fucking make heart button">
+      <change afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/[exerciseId]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/ExerciseContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/actions/getExerciseById.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/components/EmptyState.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/components/ExerciseClient.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/components/Pagination.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/libs/mail.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/libs/tokens.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/verification/verification-token.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/.env" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/api/register/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/api/register/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/ExerciseCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/ExerciseCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/Logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/Logo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/Search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/modals/LoginModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/modals/LoginModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/modals/RegisterModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/modals/RegisterModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/userMenu/MenuRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/userMenu/MenuRoutes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/libs/prismadb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/libs/prismadb.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/pages/api/auth/[...nextauth].ts" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/pages/api/auth/[...nextauth].ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tesai/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/prisma/schema.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,11 +102,11 @@
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\emailVerification" />
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components\userMenu" />
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components" />
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components\navbar" />
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\(dashboard)\(routes)" />
-      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\exercises\[exersises]" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -91,7 +121,9 @@
       <workItem from="1717835030645" duration="13886000" />
       <workItem from="1717864029212" duration="57899000" />
       <workItem from="1718216539828" duration="27092000" />
-      <workItem from="1718290391744" duration="17327000" />
+      <workItem from="1718290391744" duration="28339000" />
+      <workItem from="1718363548117" duration="4688000" />
+      <workItem from="1718368553611" duration="31288000" />
     </task>
     <task id="LOCAL-00001" summary="Main page pt #1">
       <option name="closed" value="true" />
@@ -261,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718346166098</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="6+ hours to fucking make heart button">
+      <option name="closed" value="true" />
+      <created>1718346322001</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1718346322001</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,16 +326,5 @@
     <MESSAGE value="Complete registration/ authentication + some exercises" />
     <MESSAGE value="6+ hours to fucking make heart button" />
     <option name="LAST_COMMIT_MESSAGE" value="6+ hours to fucking make heart button" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx</url>
-          <line>2</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

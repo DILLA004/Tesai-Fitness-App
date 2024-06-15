@@ -45,7 +45,7 @@ const ExerciseCard:React.FC<ExerciseCardProps> = ({
                 </div>
                 <div className="font-medium text-neutral-500 pt-4">
                     <p className="text-neutral-300">{data?.target.toUpperCase()}</p>
-                    <p className="text-sm">{data?.secondaryMuscles.map((muscle: any) => muscle.toUpperCase() + `, `)}</p>
+                    <p className="text-sm">{(data?.secondaryMuscles.map((muscle: any) => muscle.toUpperCase() + ', '))} ETC.</p>
                 </div>
 
             </div>

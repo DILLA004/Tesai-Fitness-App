@@ -2,6 +2,7 @@
 
 import MenuItem from "@/app/components/userMenu/MenuItem";
 import {signOut} from "next-auth/react";
+import {useRouter} from "next/navigation";
 const userRoutes = [
     {
         label: "PROFILE",
@@ -18,6 +19,10 @@ const userRoutes = [
 ];
 const MenuRoutes = () => {
     const routes = userRoutes;
+    const handleSignOut = async () => {
+        await signOut({ callbackUrl: window.location.pathname }); // Redirect to current path after sign out
+    };
+
     return (
         <div className="
                 absolute
@@ -42,8 +47,8 @@ const MenuRoutes = () => {
                 <MenuItem
                     key="/"
                     label="LOGOUT"
-                    href="/"
-                    onClickSecond={() => signOut()}
+                    href={window.location.pathname}
+                    onClickSecond={handleSignOut}
                     />
             </>
         </div>
