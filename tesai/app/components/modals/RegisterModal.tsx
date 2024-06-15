@@ -26,6 +26,7 @@ const RegisterModal = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: {
             errors,
         }
@@ -36,7 +37,10 @@ const RegisterModal = () => {
             password: ''
         }
     });
-
+    const handleClose = () => {
+        reset();  // Reset form on modal close
+        registerModal.onClose();
+    }
     const onSubmit: SubmitHandler<FieldValues> = (data) => {
         setIsLoading(true);
 
@@ -88,16 +92,24 @@ const RegisterModal = () => {
     }
 
     const bodyContent = (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-5">
             <Heading
             title="Welcome to Tesai"
             subtitle="Create an account!"/>
             <Input
                 id="email"
                 label="Email"
+                type="email"
                 disabled={isLoading}
                 register={register}
                 errors={errors}
+                validation={{
+                    required: "Email is required",
+                    pattern: {
+                        value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                        message: "Invalid email address",
+                    },
+                }}
                 required
             />
             <Input
@@ -106,6 +118,13 @@ const RegisterModal = () => {
                 disabled={isLoading}
                 register={register}
                 errors={errors}
+                validation={{
+                    required: "Name is required",
+                    pattern: {
+                        value: /^[a-zA-Z0-9]{3,16}$/,
+                        message: 'Name must be 3-16 characters long and contain only letters and numbers',
+                },
+                }}
                 required
             />
             <Input
@@ -114,9 +133,25 @@ const RegisterModal = () => {
                 label="Password"
                 disabled={isLoading}
                 register={register}
-                errors={errors}
                 required
+                errors={errors}
+                validation={{
+                    required: "Password is required",
+                    pattern: {
+                        value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/,
+                        message: 'Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character'
+                    },
+                    minLength: {
+                        value: 8,
+                        message: "Password must be at least 8 characters",
+                    },
+                    maxLength: {
+                        value: 20,
+                        message: 'Password cannot exceed 20 characters',
+                    },
+                }}
             />
+
         </div>
     );
 
@@ -129,12 +164,6 @@ const RegisterModal = () => {
                 icon={FcGoogle}
                 onClick={() => signIn('google')}
             />
-            {/*<Button*/}
-            {/*    outline*/}
-            {/*    label="Continue with GitHub"*/}
-            {/*    icon={AiFillGithub}*/}
-            {/*    onClick={() => signIn('github')}*/}
-            {/*/>*/}
             <div className="text-neutral-500 text-center mt-4 font-light">
                 <div className="justify-center flex flex-row items-center gap-2">
                     <div>
@@ -156,7 +185,7 @@ const RegisterModal = () => {
             isOpen={registerModal.isOpen}
             title="Register"
             actionLabel="Continue"
-            onClose={registerModal.onClose}
+            onClose={handleClose}
             onSubmit={handleSubmit(onSubmit)}
             body={bodyContent}
             footer={footerContent}

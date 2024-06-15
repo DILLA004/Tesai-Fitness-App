@@ -52,9 +52,9 @@ const Pagination: React.FC<PaginationProps> = ({ exercisesPerPage, totalExercise
                             max-w-[45px] 
                             border 
                             rounded 
-                            ${number > 9 && !(number.toString().includes('1')) ? "px-2.5 py-2" : "px-4 py-2"}
-                            ${number > 9 && (number.toString().includes('1')) ? "px-3 py-2" : "px-4 py-2"}
-                            "px-4 py-2"`}
+                            ${number > 9 && !(number.toString().includes('1')) ? "pl-2.5 pr-2.5" : "px-4 py-2"}
+                            ${number > 9 && (number.toString().includes('1')) ? "pl-3 pr-3 py-2" : "px-4 py-2"}
+                            "pl-4 pr-4 py-2"`}
                             >
                                 {number}
                             </button>

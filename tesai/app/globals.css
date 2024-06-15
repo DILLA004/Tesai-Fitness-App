@@ -7,7 +7,10 @@
     font-family: 'Futura';
     src: url('../public/Futura/FuturaPTBold.otf') format('truetype');
 }
-
+.preloader {
+    font-family: Futura, sans-serif;
+    font-size: 4rem;
+}
 :root {
     --index: calc(1vw + 1vh);
     --gap: calc(var(--index) * 10);
@@ -28,10 +31,15 @@ body {
     font-family: Inter, sans-serif;
     overflow-x: hidden;
 }
+.wrapper {
+    background-image: url("../public/images/mainpage1.png");
+    background-size: 100%;
+}
 .hero{
     width: 100vw;
     position: absolute;
     z-index: -1;
+    margin-bottom: 20vh;
 }
 .header {
     height: 100vh;
@@ -101,7 +109,7 @@ body {
 
 .section{
     display: flex;
-    padding: calc(var(--index) * 14) 0;
+    padding: calc(var(--index) * 10) 0;
 }
 .section > *{
     flex: 1;
@@ -268,7 +276,7 @@ body {
 }
 .footer{
     margin-top: auto;
-    z-index: 10;
+    /*z-index: 10;*/
     background-color: #FF4400;
     padding: 5vh 10vw;
 }

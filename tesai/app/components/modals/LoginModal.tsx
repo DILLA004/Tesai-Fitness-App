@@ -87,7 +87,7 @@ const LoginModal = () => {
     }
 
     const bodyContent = (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-5">
             <Heading
             title="Welcome back"
             subtitle="Login to an account"/>
@@ -97,6 +97,13 @@ const LoginModal = () => {
                 disabled={isLoading}
                 register={register}
                 errors={errors}
+                validation={{
+                    required: "Email is required",
+                    pattern: {
+                        value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                        message: "Invalid email address",
+                    },
+                }}
                 required
             />
             <Input
@@ -106,6 +113,9 @@ const LoginModal = () => {
                 disabled={isLoading}
                 register={register}
                 errors={errors}
+                validation={{
+                    required: "Password is required",
+                }}
                 required
             />
         </div>
@@ -120,12 +130,6 @@ const LoginModal = () => {
                 icon={FcGoogle}
                 onClick={() => signIn('google')}
             />
-            {/*<Button*/}
-            {/*    outline*/}
-            {/*    label="Continue with GitHub"*/}
-            {/*    icon={AiFillGithub}*/}
-            {/*    onClick={() => signIn('github')}*/}
-            {/*/>*/}
             <div className="text-neutral-500 text-center mt-4 font-light">
                 <div className="justify-center flex flex-row items-center gap-2">
                     <div>

@@ -41,7 +41,7 @@ const Modal: React.FC<ModalProps> = ({
         setShowModal(false);
         setTimeout(() => {
             onClose();
-        }, 300);
+        }, 400);
     }, [disabled, onClose]);
 
 
@@ -65,7 +65,7 @@ const Modal: React.FC<ModalProps> = ({
 
     return (
         <>
-            <div className="
+            <div className={`
             justify-center
             items-center
             flex
@@ -76,7 +76,11 @@ const Modal: React.FC<ModalProps> = ({
             z-50
             outline-none
             focus:outline-none
-            bg-neutral-900/70"
+            backdrop-blur-[3px]
+            transition-opacity
+            duration-300
+            ${showModal ? 'opacity-100' : 'opacity-0'}
+            `}
             >
                 <div
                     className="
@@ -120,7 +124,7 @@ const Modal: React.FC<ModalProps> = ({
                             <div className="
                             flex
                             items-center
-                            p-6
+                            p-8
                             rounded-t
                             justify-center
                             relative
@@ -134,10 +138,10 @@ const Modal: React.FC<ModalProps> = ({
                                     hover:opacity-70
                                     transition
                                     absolute
-                                    left-9">
-                                    <IoMdClose size={18}/>
+                                    right-9">
+                                    <IoMdClose size={30}/>
                                 </button>
-                                <div className="text-lg font-semibold">
+                                <div className="text-xl font-semibold">
                                     {title}
                                 </div>
                             </div>

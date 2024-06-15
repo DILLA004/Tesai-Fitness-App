@@ -12,6 +12,7 @@ import React, {Children, ReactNode} from "react";
 import Home from "@/app/(dashboard)/(routes)/page";
 import {CurrentUserProvider} from "@/app/components/CurrentUserProvider";
 import {ExerciseProvider} from "@/app/ExerciseContext";
+import Helmet from 'helmet';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,7 +49,7 @@ export default async function RootLayout({children}: {
                     {children}
                 </ExerciseProvider>
             </CurrentUserProvider>
-            <Footer/>
+            {/*<Footer/>*/}
             </body>
         </html>
     );
