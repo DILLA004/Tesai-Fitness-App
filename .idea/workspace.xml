@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="fuck">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/userMenu/UserMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/userMenu/UserMenu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +94,7 @@
       <workItem from="1718290391744" duration="28339000" />
       <workItem from="1718363548117" duration="4688000" />
       <workItem from="1718368553611" duration="34732000" />
-      <workItem from="1718418169519" duration="46841000" />
+      <workItem from="1718418169519" duration="47163000" />
     </task>
     <task id="LOCAL-00001" summary="Main page pt #1">
       <option name="closed" value="true" />
@@ -324,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718485382630</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="fuck">
+      <option name="closed" value="true" />
+      <created>1718523597715</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1718523597715</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
