@@ -15,8 +15,11 @@ import ScrollSmoother from "gsap-trial/ScrollSmoother";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 import gsap from "gsap-trial";
+import Scrollbar from "smooth-scrollbar";
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger,
+    // ScrollSmoother,
+    ScrollToPlugin);
 
 const ExercisesPage = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -37,41 +40,50 @@ const ExercisesPage = () => {
         },
     });
 
-    useLayoutEffect(() => {
-        let smoother: any;
-        if (typeof window !== 'undefined') {
-            window.scrollTo(0, 0);
-            if (ScrollTrigger.isTouch !== 1) {
-                smoother = ScrollSmoother.create({
-                    wrapper: '.wrapper',
-                    content: '.content',
-                    smooth: 1.9, // duration of smooth scroll
-                    onUpdate: () => {
-                        if (!isSmootherReady) {
-                            setIsSmootherReady(true);
-                        }
-                    },
-                });
-                gsap.fromTo('.search', {opacity: 1}, {
-                    opacity: 0,
-                    scrollTrigger: {
-                        trigger: '.search',
-                        start: '100',
-                        end: '300',
-                        scrub: true
-                    }});
-            }
-            window.scrollTo(0, 0);
-        }
+    // useLayoutEffect(() => {
+    //     let smoother: any;
+    //     if (typeof window !== 'undefined') {
+    //         window.scrollTo(0, 0);
+    //         if (ScrollTrigger.isTouch !== 1) {
+    //             // smoother = ScrollSmoother.create({
+    //             //     wrapper: '.wrapper',
+    //             //     content: '.content',
+    //             //     smooth: 1.9, // duration of smooth scroll
+    //             //     onUpdate: () => {
+    //             //         if (!isSmootherReady) {
+    //             //             setIsSmootherReady(true);
+    //             //         }
+    //             //     },
+    //             // });
+    //             gsap.fromTo('.search', {opacity: 1}, {
+    //                 opacity: 0,
+    //                 scrollTrigger: {
+    //                     trigger: '.search',
+    //                     start: '100',
+    //                     end: '300',
+    //                     scrub: true
+    //                 }});
+    //         }
+    //         window.scrollTo(0, 0);
+    //     }
+    //
+    //     return () => {
+    //         if (smoother) smoother.kill();
+    //     };
+    // }, [isSmootherReady]);
 
-        return () => {
-            if (smoother) smoother.kill();
-        };
-    }, [isSmootherReady]);
+
+    // const paginate = (pageNumber: number) => {
+    //     setCurrentPage(pageNumber);
+    //     if (topOfExercisesRef.current) {
+    //         gsap.to(window, { duration: 1, scrollTo: { y: topOfExercisesRef.current, autoKill: false } });
+    //     }
+    // };
+
     const paginate = (pageNumber: number) => {
         setCurrentPage(pageNumber);
         if (topOfExercisesRef.current) {
-            gsap.to(window, { duration: 1, scrollTo: { y: topOfExercisesRef.current, autoKill: false } });
+            topOfExercisesRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
@@ -83,11 +95,11 @@ const ExercisesPage = () => {
 
     return (
         <>
-            {!isSmootherReady && (
-                <div className="preloader z-50 absolute w-[100vw] h-[100vh] bg-black text-white text-3xl flex justify-center items-center">
-                    <h1>Loading...</h1>
-                </div>
-            )}
+            {/*{!isSmootherReady && (*/}
+            {/*    <div className="preloader z-50 absolute w-[100vw] h-[100vh] bg-black text-white text-3xl flex justify-center items-center">*/}
+            {/*        <h1>Loading...</h1>*/}
+            {/*    </div>*/}
+            {/*)}*/}
             {(
                 <>
                         <div className="wrapper">
