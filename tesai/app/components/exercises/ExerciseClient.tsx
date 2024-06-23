@@ -1,6 +1,5 @@
 "use client";
 
-import {Exercise} from "@prisma/client";
 import {SafeUser} from "@/app/types";
 import Container from "@/app/components/Container";
 import Heading from "@/app/components/Heading";

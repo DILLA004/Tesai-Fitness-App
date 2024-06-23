@@ -1,17 +1,10 @@
-"use client"
-
-import React, {createContext, useContext, useState, ReactNode, useEffect} from 'react';
-import {fetchData, options} from "@/app/api/exercises/fetchData";
+"use client";
+import React, { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 
 interface ExerciseContextType {
     exercises: any[];
     setExercises: React.Dispatch<React.SetStateAction<any[]>>;
 }
-
-const DefaultExercises = async () => {
-    const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises?offset=0&limit=1300', options);
-    return exercisesData;
-};
 
 const ExerciseContext = createContext<ExerciseContextType | undefined>(undefined);
 
@@ -31,13 +24,22 @@ export const ExerciseProvider: React.FC<ExerciseProviderProps> = ({ children }) 
     const [exercises, setExercises] = useState<any[]>([]);
 
     useEffect(() => {
-        const fetchDefaultExercises = async () => {
-            const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises?offset=0&limit=1300', options);
-            setExercises(exercisesData);
+        const fetchExercises = async () => {
+            try {
+                const response = await fetch('/api/exercises'); // API endpoint to fetch exercises
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                setExercises(data);
+            } catch (error) {
+                console.error("Error fetching exercises:", error);
+            }
         };
 
-        fetchDefaultExercises();
+        fetchExercises();
     }, []);
+
     return (
         <ExerciseContext.Provider value={{ exercises, setExercises }}>
             {children}

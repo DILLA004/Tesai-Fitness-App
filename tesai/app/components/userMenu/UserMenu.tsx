@@ -52,7 +52,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 ) : (
                     <>
                         <div onClick={registerModal.onOpen}
-                             className=" md:block text-sm text-white font-semibold py-1.5 px-7 rounded-full transition cursor-pointer border-2 border-[#FF4400] hover:bg-gradient-to-r from-[#FF0000] to-[#FF4400]" >
+                             className=" md:block text-sm text-white font-semibold py-1.5 px-7 rounded-full transition cursor-pointer border-2 border-[#FF4400] hover:bg-[#FF4400]" >
                             JOIN US
                         </div>
                         {/*<div onClick={loginModal.onOpen}*/}

@@ -59,16 +59,15 @@ body {
     position: absolute;
     display: flex;
     bottom: 4vh;
-    right: calc(var(--index) * 5);
+    right: calc(var(--index) * 7);
     background-color: #FF4400;
     color: black;
     font-family: Futura, sans-serif;
     letter-spacing: -1px;
     align-items: center;
-    padding: 2.2vh 3vw;
+    padding: 2.3vh 3.1vw;
     border-radius: 50px;
     font-size: calc(var(--index) * 0.8);
-    border: 2px solid #FF4400;
 }
 .plan-button img{
     padding-left: calc(var(--index) * 0.8);
@@ -76,9 +75,6 @@ body {
 }
 .plan-button:hover{
     cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #FF4400;
-    color: white;
 }
 .main-header h1{
     /*position: absolute;*/
@@ -157,10 +153,9 @@ body {
     font-family: Futura, sans-serif;
     letter-spacing: -1px;
     align-items: center;
-    padding: 2vh 2.4vw;
+    padding: 2.1vh 2.5vw;
     border-radius: 50px;
     font-size: calc(var(--index) * 0.76);
-    border: 2px solid #FF4400;
 }
 .join-button img{
     padding-left: calc(var(--index) * 0.8);
@@ -168,9 +163,6 @@ body {
 }
 .join-button:hover{
     cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #FF4400;
-    color: white;
 }
 
 .text-block1 .text-block__h {
@@ -199,16 +191,12 @@ body {
     font-family: Futura, sans-serif;
     letter-spacing: -1px;
     align-items: center;
-    padding: 2.2vh 2.7vw;
+    padding: 2.3vh 2.8vw;
     border-radius: 50px;
     font-size: calc(var(--index) * 0.70);
-    border: 2px solid #FF4400;
 }
 .join-button:hover{
     cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #FF4400;
-    color: white;
 }
 
 .categories{
@@ -254,16 +242,12 @@ body {
     font-family: Futura, sans-serif;
     letter-spacing: -1px;
     align-items: center;
-    padding: 2.2vh 2.7vw;
+    padding: 2.3vh 2.8vw;
     border-radius: 50px;
     font-size: calc(var(--index) * 0.76);
-    border: 2px solid #FF4400;
 }
 .section-b .consult-button:hover{
     cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #FF4400;
-    color: white;
 }
 .section-b .consult-button img{
     padding-left: calc(var(--index) * 0.7);

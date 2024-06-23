@@ -4,8 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="fuck">
+    <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="without icon">
+      <change afterPath="$PROJECT_DIR$/tesai/app/api/exercises/getExercises.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/components/exercises/CustomSelect.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/components/exercises/Filters.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/app/libs/mongo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/pages/api/exercises.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/public/images/Layer_1 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tesai/public/images/Layer_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_06_2024_3_25_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_06_2024_3_25__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/.env" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/[exerciseId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/[exerciseId]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/ExerciseContext.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/actions/getExerciseById.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/actions/getExercises.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/api/exercises/fetchData.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/EmptyState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/EmptyState.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/ExerciseCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/ExerciseClient.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseClient.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/Search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/navbar/NavbarItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/navbar/NavbarItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/navbar/NavbarRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/navbar/NavbarRoutes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tesai/app/components/userMenu/UserMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/userMenu/UserMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/connectionTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/libs/prismadb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/libs/prismadb.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/verification/verification-token.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/public/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/public/images/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/public/versus.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/public/versus1.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +83,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -49,34 +94,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/danyl/WebstormProjects/Tesai-Fitness-App/tesai/app/components/modals&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\danyl\\WebstormProjects\\Tesai-Fitness-App\\tesai\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/danyl/WebstormProjects/Tesai-Fitness-App/tesai/public/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\danyl\\WebstormProjects\\Tesai-Fitness-App\\tesai\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\public\images" />
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\api" />
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components\modals" />
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\hooks" />
-      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\public\images" />
+      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components\exercises" />
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app" />
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\gsap" />
       <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\emailVerification" />
-      <recent name="C:\Users\danyl\WebstormProjects\Tesai-Fitness-App\tesai\app\components\userMenu" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -94,7 +140,10 @@
       <workItem from="1718290391744" duration="28339000" />
       <workItem from="1718363548117" duration="4688000" />
       <workItem from="1718368553611" duration="34732000" />
-      <workItem from="1718418169519" duration="47163000" />
+      <workItem from="1718418169519" duration="47701000" />
+      <workItem from="1718741223128" duration="8434000" />
+      <workItem from="1718826607553" duration="1773000" />
+      <workItem from="1718828411429" duration="68007000" />
     </task>
     <task id="LOCAL-00001" summary="Main page pt #1">
       <option name="closed" value="true" />
@@ -328,7 +377,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718523597715</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="without icon">
+      <option name="closed" value="true" />
+      <created>1718523847338</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1718523847338</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +422,19 @@
     <MESSAGE value="6+ hours to fucking make heart button" />
     <MESSAGE value="first sprint, full sign in/up, exercise cards, main page" />
     <MESSAGE value="fuck" />
-    <option name="LAST_COMMIT_MESSAGE" value="fuck" />
+    <MESSAGE value="without icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="without icon" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

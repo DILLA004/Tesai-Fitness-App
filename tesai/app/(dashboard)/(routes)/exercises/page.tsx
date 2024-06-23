@@ -1,84 +1,67 @@
-'use client';
-
-import Search from "@/app/components/Search";
-import React, { useLayoutEffect, useRef, useState } from "react";
-import { FieldValues, useForm } from "react-hook-form";
-import Container from "@/app/components/Container";
-import ExerciseCard from "@/app/components/ExerciseCard";
-import { useCurrentUser } from "@/app/components/CurrentUserProvider";
-import EmptyState from "@/app/components/EmptyState";
-import Pagination from "@/app/components/Pagination";
-import { useExerciseContext } from "@/app/ExerciseContext";
-import Footer from "@/app/components/Footer";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import ScrollSmoother from "gsap-trial/ScrollSmoother";
-import ScrollToPlugin from "gsap/ScrollToPlugin";
-
-import gsap from "gsap-trial";
-import Scrollbar from "smooth-scrollbar";
-
-gsap.registerPlugin(ScrollTrigger,
-    // ScrollSmoother,
-    ScrollToPlugin);
-
-const ExercisesPage = () => {
-    const [isLoading, setIsLoading] = useState(false);
+// ExercisesPage.tsx
+'use client'
+import React, { useEffect, useRef, useState } from 'react';
+import { useForm, FieldValues } from 'react-hook-form';
+import Container from '@/app/components/Container';
+import ExerciseCard from '@/app/components/exercises/ExerciseCard';
+import { useCurrentUser } from '@/app/components/CurrentUserProvider';
+import EmptyState from '@/app/components/EmptyState';
+import Pagination from '@/app/components/Pagination';
+import { useExerciseContext } from '@/app/components/exercises/ExerciseContext';
+import Footer from '@/app/components/Footer';
+import Search from '@/app/components/Search';
+import Filters from '@/app/components/exercises/Filters';
+type FiltersType = {
+    [key: string]: string;
+};
+interface Exercise {
+    name: string;
+    target: string;
+    equipment: string;
+    bodyPart: string;
+    [key: string]: any; // Index signature to allow dynamic keys
+}
+const ExercisesPage: React.FC = () => {
     const { exercises, setExercises } = useExerciseContext();
     const [exercisesPerPage] = useState(30);
+    const [search, setSearch] = useState('');
     const [currentPage, setCurrentPage] = useState(1);
-    const [isSmootherReady, setIsSmootherReady] = useState(false);
+    const [filters, setFilters] = useState<FiltersType>({ bodyPart: '', equipment: '', target: '' });
+    const [filterOptions, setFilterOptions] = useState({
+        bodyParts: [] as string[],
+        equipment: [] as string[],
+        targets: [] as string[],
+    });
     const topOfExercisesRef = useRef<HTMLDivElement>(null);
     const { currentUser } = useCurrentUser();
 
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm<FieldValues>({
-        defaultValues: {
-            keyword: '',
-        },
+    const { register, handleSubmit, formState: { errors } } = useForm<FieldValues>({
+        defaultValues: { keyword: '' },
     });
 
-    // useLayoutEffect(() => {
-    //     let smoother: any;
-    //     if (typeof window !== 'undefined') {
-    //         window.scrollTo(0, 0);
-    //         if (ScrollTrigger.isTouch !== 1) {
-    //             // smoother = ScrollSmoother.create({
-    //             //     wrapper: '.wrapper',
-    //             //     content: '.content',
-    //             //     smooth: 1.9, // duration of smooth scroll
-    //             //     onUpdate: () => {
-    //             //         if (!isSmootherReady) {
-    //             //             setIsSmootherReady(true);
-    //             //         }
-    //             //     },
-    //             // });
-    //             gsap.fromTo('.search', {opacity: 1}, {
-    //                 opacity: 0,
-    //                 scrollTrigger: {
-    //                     trigger: '.search',
-    //                     start: '100',
-    //                     end: '300',
-    //                     scrub: true
-    //                 }});
-    //         }
-    //         window.scrollTo(0, 0);
-    //     }
-    //
-    //     return () => {
-    //         if (smoother) smoother.kill();
-    //     };
-    // }, [isSmootherReady]);
+    useEffect(() => {
+        const fetchFilterOptions = async () => {
+            const response = await fetch('/api/exercises');
+            const data: Exercise[] = await response.json();
 
+            const bodyParts = Array.from(new Set(data.map(exercise => exercise.bodyPart)));
+            const equipment = Array.from(new Set(data.map(exercise => exercise.equipment)));
+            const targets = Array.from(new Set(data.map(exercise => exercise.target)));
 
-    // const paginate = (pageNumber: number) => {
-    //     setCurrentPage(pageNumber);
-    //     if (topOfExercisesRef.current) {
-    //         gsap.to(window, { duration: 1, scrollTo: { y: topOfExercisesRef.current, autoKill: false } });
-    //     }
-    // };
+            setFilterOptions({
+                bodyParts,
+                equipment,
+                targets
+            });
+        };
+
+        fetchFilterOptions();
+
+        return () => {
+            // Reset exercises state when component unmounts
+            setExercises([]);
+        };
+    }, [setExercises]);
 
     const paginate = (pageNumber: number) => {
         setCurrentPage(pageNumber);
@@ -86,73 +69,78 @@ const ExercisesPage = () => {
             topOfExercisesRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
-
+    const value = '';
     const indexOfLastExercise = currentPage * exercisesPerPage;
     const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
     const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise);
 
-    console.log(topOfExercisesRef);
-
     return (
-        <>
-            {/*{!isSmootherReady && (*/}
-            {/*    <div className="preloader z-50 absolute w-[100vw] h-[100vh] bg-black text-white text-3xl flex justify-center items-center">*/}
-            {/*        <h1>Loading...</h1>*/}
-            {/*    </div>*/}
-            {/*)}*/}
-            {(
-                <>
-                        <div className="wrapper">
-                            <div className="content" >
-                                <div ref={topOfExercisesRef}>
-                                    <Container>
-                                        <div data-speed="2" className="search px-[24vw]  pt-32">
-                                            <div className="font-bold text-2xl text-[#8A8A8A] flex flex-row gap-2 pb-10 justify-center">
-                                                <h1>EXPLORE</h1><h1 className="text-white">HUNDREDS</h1><h1>OF  EXERCISES!!!</h1>
-                                            </div>
-                                            <Search
-                                                currentUser={currentUser}
-                                                value="sike"
-                                                id="exercise"
-                                                label="Enter exercise"
-                                                disabled={isLoading}
-                                                register={register}
-                                                errors={errors}
-                                                setCurrentPage={setCurrentPage}
-                                                required
-                                            />
-                                            {exercises.length === 0 && <EmptyState />}
+        <div className="wrapper">
+            <div className="content">
+                <div ref={topOfExercisesRef}>
+                    <Container>
+                        <div data-speed="2" className="search px-[24vw] pt-32">
+                            <div className="font-bold text-2xl text-[#8A8A8A] flex flex-row gap-2 pb-10 justify-center">
+                                <h1>EXPLORE</h1>
+                                <h1 className="text-white">HUNDREDS</h1>
+                                <h1>OF EXERCISES!!!</h1>
+                            </div>
+                            <Search
+                                currentUser={currentUser}
+                                value={setSearch}
+                                id="exercise"
+                                label="Enter exercise"
+                                disabled={false}
+                                register={register}
+                                errors={errors}
+                                setCurrentPage={setCurrentPage}
+                                required
+                                filters={filters}
+                            />
+                        </div>
+
+                        <div className="flex flex-row">
+
+                            <div className="flex">
+                                <Filters filters={filters} setFilters={setFilters} options={filterOptions} />
+                            </div>
+                            <div className="flex-grow flex-row">
+                                {exercises.length === 0 && <EmptyState />}
+
+                                    {(search !== '' && exercises.length !== 0) && (
+                                        <div className={`pt-8 -mb-14 text-xl font-semibold `}>
+                                        <div className="flex flex-row gap-3">
+                                            <p className="text-[#8e8e8e]">Searched exercises for:</p>
+                                            <p>{search.toUpperCase()}</p>
                                         </div>
-                                        <div className="cards flex-grow">
-                                            <div className="grid pt-24 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8">
-                                                {currentExercises.map((exercise: any) => (
-                                                    <ExerciseCard
-                                                        currentUser={currentUser}
-                                                        key={exercise.id}
-                                                        data={exercise}
-                                                    />
-                                                ))}
-                                            </div>
                                         </div>
-                                        <div className="flex justify-center mt-10">
-                                            <Pagination
-                                                exercisesPerPage={exercisesPerPage}
-                                                totalExercises={exercises.length}
-                                                paginate={paginate}
-                                                currentPage={currentPage}
-                                            />
-                                        </div>
-                                    </Container>
-                                    <div className="pt-32">
-                                        <Footer/>
-                                    </div>
+                                        )
+                                    }
+
+                                <div className="grid py-24 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8">
+                                    {currentExercises.map((exercise) => (
+                                        <ExerciseCard currentUser={currentUser} key={exercise.id} data={exercise} />
+                                    ))}
                                 </div>
                             </div>
                         </div>
-                </>
-            )}
-        </>
+
+                        <div className="flex justify-center mt-10">
+                            <Pagination
+                                exercisesPerPage={exercisesPerPage}
+                                totalExercises={exercises.length}
+                                paginate={paginate}
+                                currentPage={currentPage}
+                            />
+                        </div>
+                    </Container>
+                    <div className="pt-32">
+                        <Footer />
+                    </div>
+                </div>
+            </div>
+        </div>
     );
-}
+};
 
 export default ExercisesPage;

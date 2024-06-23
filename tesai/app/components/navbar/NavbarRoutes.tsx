@@ -36,7 +36,8 @@ const NavbarRoutes = () => {
                 flex-row
                 items-center
                 space-x-4
-                justify-between">
+                justify-between
+                ">
                 {routes.map((route) => (
                     <NavbarItem
                         key={route.href}

@@ -17,7 +17,7 @@ const EmptyState:React.FC<EmptyState> = ({
 
     return (
         <div className="
-        h-[60vh] flex flex-col gap-2 justify-center items-center" >
+        h-full w-full flex flex-col gap-2 justify-center items-center" >
             <Heading center title={title} subtitle={subtitle}/>
         </div>
     )

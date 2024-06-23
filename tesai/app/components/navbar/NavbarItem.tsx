@@ -2,6 +2,7 @@
 'use client';
 
 import {usePathname, useRouter} from "next/navigation";
+import {useEffect, useState} from "react";
 
 interface NavbarItemProps {
     // onClick: () => void;
@@ -12,10 +13,11 @@ interface NavbarItemProps {
 const NavbarItem: React.FC<NavbarItemProps> = ({
                                                    // onClick,
                                                    label,
-                                                   href
+                                                   href,
                                                }) => {
     const pathName = usePathname();
     const router = useRouter();
+
 
     const isActive =
         (pathName === "/" && href === "/") ||
