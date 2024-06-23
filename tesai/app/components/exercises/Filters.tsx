@@ -29,9 +29,9 @@ const Filters: React.FC<FiltersProps> = ({ filters, setFilters, options }) => {
     const [isActive, setIsActive] = useState(false);
     const { exercises } = useExerciseContext();
     const handleFilter = async () => {
-        // const response = await fetch('/api/exercises');
-        // const data: Exercise[] = await response.json();
-        const filteredData = exercises.filter((exercise: Exercise) => {
+        const response = await fetch('/api/exercises');
+        const data: Exercise[] = await response.json();
+        const filteredData = data.filter((exercise: Exercise) => {
             const matchesFilters = Object.keys(filters).every(filterName => {
                 return filters[filterName] ? exercise[filterName] === filters[filterName] : true;
             });

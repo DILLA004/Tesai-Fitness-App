@@ -4,50 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="without icon">
-      <change afterPath="$PROJECT_DIR$/tesai/app/api/exercises/getExercises.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/components/exercises/CustomSelect.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/components/exercises/Filters.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/libs/mongo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/pages/api/exercises.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/public/images/Layer_1 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/public/images/Layer_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_06_2024_3_25_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_06_2024_3_25__Changes_.xml" beforeDir="false" />
+    <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="hell of an effort to just fucking filters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/.env" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/[exerciseId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/[exerciseId]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/ExerciseContext.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/actions/getExerciseById.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/actions/getExercises.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/api/exercises/fetchData.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/EmptyState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/EmptyState.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/ExerciseCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/ExerciseClient.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseClient.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/Search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/navbar/NavbarItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/navbar/NavbarItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/navbar/NavbarRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/navbar/NavbarRoutes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/userMenu/UserMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/userMenu/UserMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/connectionTest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/libs/prismadb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/libs/prismadb.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/verification/verification-token.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/public/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/public/images/background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/public/versus.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/public/versus1.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/exercises/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/exercises/Filters.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +102,7 @@
       <workItem from="1718418169519" duration="47701000" />
       <workItem from="1718741223128" duration="8434000" />
       <workItem from="1718826607553" duration="1773000" />
-      <workItem from="1718828411429" duration="68007000" />
+      <workItem from="1718828411429" duration="68863000" />
     </task>
     <task id="LOCAL-00001" summary="Main page pt #1">
       <option name="closed" value="true" />
@@ -385,7 +344,31 @@
       <option name="project" value="LOCAL" />
       <updated>1718523847338</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="hell of an effort to just fucking filters">
+      <option name="closed" value="true" />
+      <created>1719159147194</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1719159147194</updated>
+    </task>
+    <task id="LOCAL-00032" summary="hell of an effort to just fucking filters">
+      <option name="closed" value="true" />
+      <created>1719159191450</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1719159191450</updated>
+    </task>
+    <task id="LOCAL-00033" summary="hell of an effort to just fucking filters">
+      <option name="closed" value="true" />
+      <created>1719159353359</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1719159353359</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +406,8 @@
     <MESSAGE value="first sprint, full sign in/up, exercise cards, main page" />
     <MESSAGE value="fuck" />
     <MESSAGE value="without icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="without icon" />
+    <MESSAGE value="hell of an effort to just fucking filters" />
+    <option name="LAST_COMMIT_MESSAGE" value="hell of an effort to just fucking filters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
