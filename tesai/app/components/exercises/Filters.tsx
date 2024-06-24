@@ -19,31 +19,32 @@ interface Exercise {
 }
 
 const Filters: React.FC<FiltersProps> = ({ filters, setFilters, options }) => {
-
-
-    const handleFilterChange = (filterName: string, value: string) => {
-        setFilters(prevFilters => ({
-            ...prevFilters,
-            [filterName]: value,
-        }));
-        ToggleApply();
-    };
     const [isActive, setIsActive] = useState(false);
     const { exercises, setExercises } = useExerciseContext();
-    const handleFilter = async () => {
-        const response = await fetch('/api/exercises');
-        const data: Exercise[] = await response.json();
-        const filteredData = exercises.filter((exercise: Exercise) => {
-            const matchesFilters = Object.keys(filters).every(filterName => {
-                return filters[filterName] ? exercise[filterName] === filters[filterName] : true;
-            });
-            return matchesFilters;
+
+
+    const { originalExercises } = useExerciseContext();
+
+    const handleFilterChange = (filterName: string, value: string) => {
+        setFilters({
+            ...filters,
+            [filterName]: value,
         });
+    };
+
+    useEffect(() => {
+        applyFilters();
+    }, [filters, originalExercises]);
+
+    const applyFilters = () => {
+        const filteredData = originalExercises.filter((exercise) => {
+            return Object.keys(filters).every((filterName) => {
+                return filters[filterName] === '' || exercise[filterName] === filters[filterName];
+            });
+        });
+        // Update exercises state with filtered data
         setExercises(filteredData);
     };
-    const ToggleApply = () => {
-        setIsActive(true);
-    }
     return (
         <div className="pt-24">
             <CustomSelect
@@ -64,13 +65,6 @@ const Filters: React.FC<FiltersProps> = ({ filters, setFilters, options }) => {
                 onOptionSelect={option => handleFilterChange('target', option)}
                 label="Target"
             />
-            <button
-                type="button"
-                className={`flex flex-row justify-center w-[16vw] mb-1 rounded-md p-2 ${ !isActive ? ('bg-[#8e8e8e] cursor-not-allowed') : ('bg-[#ff4400]')} focus:border-white border-white text-white border-[#8E8E8E] text-[#8e8e8e]}`}
-                onClick={handleFilter}
-            >
-                APPLY
-            </button>
         </div>
     );
 };

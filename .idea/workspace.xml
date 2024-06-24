@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dc7a5a6-e50d-4a56-a740-ad12ecab351f" name="Changes" comment="hell of an effort to just fucking filters">
-      <change afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/profile/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseVideo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tesai/pages/api/getVideoLink.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/.env" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/[exerciseId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/[exerciseId]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/(dashboard)/(routes)/exercises/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/HeartButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/HeartButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseClient.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseClient.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/exercises/ExerciseContext.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tesai/app/components/exercises/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/exercises/Filters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesai/app/components/userMenu/MenuRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/tesai/app/components/userMenu/MenuRoutes.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +104,7 @@
       <workItem from="1718418169519" duration="47701000" />
       <workItem from="1718741223128" duration="8434000" />
       <workItem from="1718826607553" duration="1773000" />
-      <workItem from="1718828411429" duration="81695000" />
+      <workItem from="1718828411429" duration="88186000" />
     </task>
     <task id="LOCAL-00001" summary="Main page pt #1">
       <option name="closed" value="true" />
@@ -385,7 +378,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719160204759</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="hell of an effort to just fucking filters">
+      <option name="closed" value="true" />
+      <created>1719256474767</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1719256474767</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

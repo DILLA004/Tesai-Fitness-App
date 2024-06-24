@@ -4,6 +4,8 @@ import React, { createContext, ReactNode, useContext, useEffect, useState } from
 interface ExerciseContextType {
     exercises: any[];
     setExercises: React.Dispatch<React.SetStateAction<any[]>>;
+    originalExercises: any[];
+    setOriginalExercises: React.Dispatch<React.SetStateAction<any[]>>;
 }
 
 const ExerciseContext = createContext<ExerciseContextType | undefined>(undefined);
@@ -22,6 +24,7 @@ interface ExerciseProviderProps {
 
 export const ExerciseProvider: React.FC<ExerciseProviderProps> = ({ children }) => {
     const [exercises, setExercises] = useState<any[]>([]);
+    const [originalExercises, setOriginalExercises] = useState<any[]>([]);
 
     useEffect(() => {
         const fetchExercises = async () => {
@@ -32,6 +35,7 @@ export const ExerciseProvider: React.FC<ExerciseProviderProps> = ({ children }) 
                 }
                 const data = await response.json();
                 setExercises(data);
+                setOriginalExercises(data);
             } catch (error) {
                 console.error("Error fetching exercises:", error);
             }
@@ -41,7 +45,7 @@ export const ExerciseProvider: React.FC<ExerciseProviderProps> = ({ children }) 
     }, []);
 
     return (
-        <ExerciseContext.Provider value={{ exercises, setExercises }}>
+        <ExerciseContext.Provider value={{ exercises, setExercises, originalExercises, setOriginalExercises }}>
             {children}
         </ExerciseContext.Provider>
     );

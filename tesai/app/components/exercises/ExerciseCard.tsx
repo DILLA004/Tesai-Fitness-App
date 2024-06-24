@@ -25,7 +25,6 @@ const ExerciseCard:React.FC<ExerciseCardProps> = ({
     currentUser
 }) => {
     const router = useRouter();
-    console.log(currentUser);
     return (
         <div onClick={() => router.push(`/exercises/${data.id}`)}
              className="
