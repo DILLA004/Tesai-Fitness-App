@@ -6,7 +6,7 @@ import {useRouter} from "next/navigation";
 const userRoutes = [
     {
         label: "PROFILE",
-        href: "/",
+        href: "/profile",
     },
     {
         label: "TRAINING",

@@ -5,6 +5,7 @@ import EmptyState from '@/app/components/EmptyState';
 import getCurrentUser from '@/app/actions/getCurrentUser';
 import ExerciseClient from '@/app/components/exercises/ExerciseClient';
 import Footer from '@/app/components/Footer';
+import {useCurrentUser} from "@/app/components/CurrentUserProvider";
 
 interface IParams {
     exerciseId?: string;
@@ -13,7 +14,7 @@ interface IParams {
 
 const ExercisePage = ({ params }: { params: IParams }) => {
     const [exercise, setExercise] = useState<any>(null);
-    const [currentUser, setCurrentUser] = useState<any>(null);
+    const { currentUser } = useCurrentUser();
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
     useEffect(() => {
@@ -34,22 +35,12 @@ const ExercisePage = ({ params }: { params: IParams }) => {
             }
         };
 
-        const fetchCurrentUser = async () => {
-            try {
-                const user = await getCurrentUser();
-                setCurrentUser(user);
-            } catch (error) {
-                console.error('Error fetching current user:', error);
-                setCurrentUser(null);
-            }
-        };
 
         fetchExercise();
-        fetchCurrentUser();
     }, [params.exerciseId]);
 
     if (isLoading) {
-        return <div>Loading...</div>;
+        return <div className="justify-center items-center">Loading...</div>;
     }
 
     if (!exercise) {

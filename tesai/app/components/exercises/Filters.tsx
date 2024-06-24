@@ -1,5 +1,5 @@
 import CustomSelect from "@/app/components/exercises/CustomSelect";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useExerciseContext} from "@/app/components/exercises/ExerciseContext";
 
 interface FiltersProps {
@@ -19,6 +19,8 @@ interface Exercise {
 }
 
 const Filters: React.FC<FiltersProps> = ({ filters, setFilters, options }) => {
+
+
     const handleFilterChange = (filterName: string, value: string) => {
         setFilters(prevFilters => ({
             ...prevFilters,
@@ -27,11 +29,11 @@ const Filters: React.FC<FiltersProps> = ({ filters, setFilters, options }) => {
         ToggleApply();
     };
     const [isActive, setIsActive] = useState(false);
-    const { exercises } = useExerciseContext();
+    const { exercises, setExercises } = useExerciseContext();
     const handleFilter = async () => {
         const response = await fetch('/api/exercises');
         const data: Exercise[] = await response.json();
-        const filteredData = data.filter((exercise: Exercise) => {
+        const filteredData = exercises.filter((exercise: Exercise) => {
             const matchesFilters = Object.keys(filters).every(filterName => {
                 return filters[filterName] ? exercise[filterName] === filters[filterName] : true;
             });
@@ -42,7 +44,6 @@ const Filters: React.FC<FiltersProps> = ({ filters, setFilters, options }) => {
     const ToggleApply = () => {
         setIsActive(true);
     }
-    const { setExercises } = useExerciseContext();
     return (
         <div className="pt-24">
             <CustomSelect

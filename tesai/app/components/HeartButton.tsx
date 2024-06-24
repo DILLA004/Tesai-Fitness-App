@@ -25,7 +25,7 @@ const HeartButton:React.FC<HeartButtonProps> = ({
                 <FaRegHeart
                     size={28} className="fill-[#FF4400] absolute -top-[2px] -right-[2px]"/>
                 <FaHeart size={24} className={
-                    hasFavorited ? 'fill-[#FF4400]' : 'fill-white'
+                    hasFavorited ? 'fill-[#FF4400]' : 'fill-transparent'
                 }/>
         </div>
     )

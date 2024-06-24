@@ -57,10 +57,10 @@ const ExercisesPage: React.FC = () => {
 
         fetchFilterOptions();
 
-        return () => {
-            // Reset exercises state when component unmounts
-            setExercises([]);
-        };
+        // return () => {
+        //     // Reset exercises state when component unmounts
+        //     setExercises([]);
+        // };
     }, [setExercises]);
 
     const paginate = (pageNumber: number) => {
