@@ -25,6 +25,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({
         pathName?.startsWith(`${href}/`);
 
     const onClick = () => {
+        sessionStorage.setItem('exercises', JSON.stringify(''));
         router.push(href);
     }
     return (

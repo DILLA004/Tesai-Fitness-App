@@ -46,7 +46,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                          transition"
                     >
                         <div className="md:block">
-                            <Avatar src={currentUser?.image}/>
+                            <Avatar src={currentUser?.image} width={36} height={36}/>
                         </div>
                     </div>
                 ) : (

@@ -4,17 +4,21 @@ import Image from "next/image";
 
 interface AvatarProps {
     src: string | null | undefined;
+    height: number;
+    width: number;
 };
 
 const Avatar:React.FC<AvatarProps> = ({
-    src
-}) =>{
+                                          src,
+                                          height,
+                                          width
+                                      }) =>{
     return (
         <Image className="rounded-full"
-        height="36"
-        width="36"
-        alt="Avatar"
-        src={src || "/images/orangeUser.png"}/>
+               height={height}
+               width={width}
+               alt="Avatar"
+               src={src || "/images/orangeUser.png"}/>
     );
 }
 

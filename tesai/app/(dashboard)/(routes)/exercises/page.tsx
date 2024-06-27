@@ -40,7 +40,38 @@ const ExercisesPage: React.FC = () => {
     });
 
     useEffect(() => {
-        const fetchFilterOptions = async () => {
+        const storedExercises = sessionStorage.getItem('exercises');
+
+        if (storedExercises) {
+            try {
+                const parsedExercises = JSON.parse(storedExercises);
+                if (Array.isArray(parsedExercises)) {
+                    setExercises(parsedExercises);
+                }
+            } catch (error) {
+                console.error('Failed to parse stored exercises', error);
+                fetchExercises();
+            }
+        } else {
+            fetchExercises();
+        }
+
+        fetchFilterOptions();
+    }, [setExercises]);
+
+    const fetchExercises = async () => {
+        try {
+            const response = await fetch('/api/exercises');
+            const data: Exercise[] = await response.json();
+            setExercises(data);
+            sessionStorage.setItem('exercises', JSON.stringify(data));
+        } catch (error) {
+            console.error('Failed to fetch exercises', error);
+        }
+    };
+
+    const fetchFilterOptions = async () => {
+        try {
             const response = await fetch('/api/exercises');
             const data: Exercise[] = await response.json();
 
@@ -53,15 +84,10 @@ const ExercisesPage: React.FC = () => {
                 equipment,
                 targets
             });
-        };
-
-        fetchFilterOptions();
-
-        // return () => {
-        //     // Reset exercises state when component unmounts
-        //     setExercises([]);
-        // };
-    }, [setExercises]);
+        } catch (error) {
+            console.error('Failed to fetch filter options', error);
+        }
+    };
 
     const paginate = (pageNumber: number) => {
         setCurrentPage(pageNumber);
@@ -119,7 +145,7 @@ const ExercisesPage: React.FC = () => {
 
                                 <div className="grid py-24 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8">
                                     {currentExercises.map((exercise) => (
-                                        <ExerciseCard currentUser={currentUser} key={exercise.id} data={exercise} />
+                                        <ExerciseCard currentUser={currentUser} key={exercise.id} data={exercise} exercises={exercises}/>
                                     ))}
                                 </div>
                             </div>

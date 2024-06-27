@@ -44,6 +44,7 @@ export const ExerciseProvider: React.FC<ExerciseProviderProps> = ({ children }) 
         fetchExercises();
     }, []);
 
+
     return (
         <ExerciseContext.Provider value={{ exercises, setExercises, originalExercises, setOriginalExercises }}>
             {children}

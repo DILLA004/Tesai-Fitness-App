@@ -102,7 +102,7 @@ const ExerciseClient:React.FC<ExerciseClientProps> = ({
                         <h2 className="text-3xl font-bold mb-4">Recommended Exercises</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             {recommendedExercises.map((item, index) => (
-                                <ExerciseCard data={item} currentUser={currentUser} key={index}/>
+                                <ExerciseCard data={item} currentUser={currentUser} key={index} exercises={null}/>
                             ))}
                         </div>
                     </div>

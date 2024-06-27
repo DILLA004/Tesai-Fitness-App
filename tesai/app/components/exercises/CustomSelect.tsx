@@ -11,10 +11,23 @@ const CustomSelect: React.FC<CustomSelectProps> = ({ options, selectedOption, on
     const [isOpen, setIsOpen] = useState(false);
     const toggleDropdown = () => setIsOpen(!isOpen);
     const selectRef = useRef<HTMLDivElement>(null);
-    const handleClose = () =>{
+    const handleClose = () => {
         setIsOpen(false);
-        onOptionSelect('')
-    }
+        onOptionSelect('');
+        sessionStorage.removeItem(label); // Clear storage on close
+    };
+    const handleOptionSelect = (option: string) => {
+        onOptionSelect(option);
+        setIsOpen(false);
+        sessionStorage.setItem(label, option); // Store selected option in sessionStorage
+    };
+    useEffect(() => {
+        const storedOption = sessionStorage.getItem(label); // Use label as the key
+        if (storedOption) {
+            onOptionSelect(storedOption); // Initialize with the stored option
+        }
+    }, [label, onOptionSelect]);
+
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (selectRef.current && !selectRef.current.contains(event.target as Node)) {
@@ -50,10 +63,10 @@ const CustomSelect: React.FC<CustomSelectProps> = ({ options, selectedOption, on
                         <li
                             key={option}
                             className={`cursor-pointer select-none relative py-2 pl-3 pr-9  hover:text-white ${option === selectedOption ? 'font-semibold text-white' : 'text-[#8e8e8e]'}`}
-                            onClick={() => {
-                                onOptionSelect(option);
-                                setIsOpen(false);
-                            }}
+                            onClick={() => handleOptionSelect(option)
+                                // onOptionSelect(option);
+                                // setIsOpen(false);
+                            }
                         >
                             {option.toUpperCase()}
                         </li>

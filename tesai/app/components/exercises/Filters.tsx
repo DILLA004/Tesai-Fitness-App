@@ -65,6 +65,7 @@ const Filters: React.FC<FiltersProps> = ({ filters, setFilters, options }) => {
                 onOptionSelect={option => handleFilterChange('target', option)}
                 label="Target"
             />
+
         </div>
     );
 };

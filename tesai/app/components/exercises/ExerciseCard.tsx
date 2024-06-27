@@ -1,6 +1,6 @@
 'use client';
 
-import {SafeUser} from "@/app/types";
+import {Exercise, SafeUser} from "@/app/types";
 import React from "react";
 import {useRouter} from "next/navigation";
 import Image from "next/image";
@@ -14,6 +14,7 @@ interface ExerciseCardProps {
     actionLabel?: string;
     actionId?: string;
     currentUser: SafeUser | null;
+    exercises: Exercise[] | null;
 }
 
 const ExerciseCard:React.FC<ExerciseCardProps> = ({
@@ -22,11 +23,19 @@ const ExerciseCard:React.FC<ExerciseCardProps> = ({
     disabled,
     actionLabel,
     actionId,
-    currentUser
+    currentUser,
+    exercises
 }) => {
     const router = useRouter();
+    const handleCardClick = () => {
+        // Save current state to sessionStorage
+        sessionStorage.setItem('exercises', JSON.stringify(exercises));
+
+        // Navigate to the exercise detail page
+        router.push(`/exercises/${data.id}`);
+    };
     return (
-        <div onClick={() => router.push(`/exercises/${data.id}`)}
+        <div onClick={handleCardClick}
              className="
         col-span-1 cursor-pointer group">
             <div className="flex flex-col gap-2 w-full">
